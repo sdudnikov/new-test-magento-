@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<config>
+    <modules>
+        <Jun_VendorAccount>
+            <version>0.1.0</version>
+        </Jun_VendorAccount>
+    </modules>
+    <global>
+        <helpers>
+            <jun_vendoraccount>
+                <class>Jun_VendorAccount_Helper</class>
+            </jun_vendoraccount>
+        </helpers>
+    </global>
+    <adminhtml>
+        <menu>
+            <jun translate="title" module="jun_vendoraccount">
+                <title>VendorAccount</title>
+                <sort_order>71</sort_order>
+                <action>admin/vendor</action>
+            </jun>
+        </menu>    
+    </adminhtml>
+        
+</config>
