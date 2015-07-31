@@ -11,15 +11,17 @@
                 <class>Jun_VendorAccount_Helper</class>
             </jun_vendoraccount>
         </helpers>
-    </global>
-    <adminhtml>
-        <menu>
-            <jun translate="title" module="jun_vendoraccount">
-                <title>VendorAccount</title>
-                <sort_order>71</sort_order>
-                <action>admin/vendor</action>
-            </jun>
-        </menu>    
-    </adminhtml>
-        
+    </global>        
+    <admin>
+        <routers>
+            <adminhtml>
+                <!--<use>admin</use>-->
+                <args>
+                    <modules>
+                        <vendor before="Mage_Adminhtml">Jun_VendorAccount_Adminhtml</vendor>
+                    </modules>
+                </args>    
+            </adminhtml>
+        </routers>
+    </admin>
 </config>
