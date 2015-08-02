@@ -11,6 +11,11 @@
                 <class>Jun_VendorAccount_Helper</class>
             </jun_vendoraccount>
         </helpers>
+        <blocks>
+            <vendor_block>
+                <class>Jun_VendorAccount_Block</class>
+            </vendor_block>
+        </blocks>
         <models>
             <vendorm>
                 <class>Jun_VendorAccount_Model</class>
@@ -38,7 +43,7 @@
             <adminhtml>
                 <args>
                     <modules>
-                        <vendor before="Mage_Adminhtml">Jun_VendorAccount_Adminhtml</vendor>
+                        <vendor_cont>Jun_VendorAccount_Adminhtml</vendor_cont>
                     </modules>
                 </args>    
             </adminhtml>

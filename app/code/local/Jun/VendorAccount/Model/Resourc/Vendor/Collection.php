@@ -4,7 +4,7 @@ class Jun_VendorAccount_Model_Resourc_Vendor_Collection extends Mage_Core_Model_
 {
     protected function _construct()
     {
-        parent::_construct();
+//        parent::_construct();  empty
         $this->_init('vendorm/vendor');
     }
 }
