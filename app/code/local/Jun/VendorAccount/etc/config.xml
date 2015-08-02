@@ -11,11 +11,31 @@
                 <class>Jun_VendorAccount_Helper</class>
             </jun_vendoraccount>
         </helpers>
+        <models>
+            <vendorm>
+                <class>Jun_VendorAccount_Model</class>
+                <resourceModel>vendor_resource</resourceModel>
+            </vendorm>
+            <vendor_resource>
+                <class>Jun_VendorAccount_Model_Resourc</class>
+                <entities>
+                    <table_ven>
+                        <table>vendor_table</table>
+                    </table_ven>
+                </entities>
+            </vendor_resource>
+        </models>
+        <resources>
+            <setupjun>
+                <setup>
+                    <module>Jun_VendorAccount</module>
+                </setup>
+            </setupjun>
+        </resources>
     </global>        
     <admin>
         <routers>
             <adminhtml>
-                <!--<use>admin</use>-->
                 <args>
                     <modules>
                         <vendor before="Mage_Adminhtml">Jun_VendorAccount_Adminhtml</vendor>
