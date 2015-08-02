@@ -31,11 +31,11 @@
             </vendor_resource>
         </models>
         <resources>
-            <setupjun>
+            <install>
                 <setup>
                     <module>Jun_VendorAccount</module>
                 </setup>
-            </setupjun>
+            </install>
         </resources>
     </global>        
     <admin>
