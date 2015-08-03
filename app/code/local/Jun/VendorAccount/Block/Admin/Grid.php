@@ -31,19 +31,24 @@ class Jun_VendorAccount_Block_Admin_Grid extends Mage_Adminhtml_Block_Widget_Gri
             'type' => 'float'
         ));
         
+        
         $this->addColumn('status', array(
             'header' => $helper->__('Status'),
             'index' => 'status',
             'type' => 'options',
             'options'   => array(
-                    0 => 'Enabled',
-                    1 => 'Disabled',
+                    0 => 'Disable',
+                    1 => 'Enable',
                 ),
         ));
         
         return parent::_prepareColumns();
     }
     
+    public function getRowUrl($model)
+    {
+        return $this->getUrl('*/*/edit', array('id' => $model->getId()));
+    }
     
 }
 
