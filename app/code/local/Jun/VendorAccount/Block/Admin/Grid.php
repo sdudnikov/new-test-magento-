@@ -31,11 +31,6 @@ class Jun_VendorAccount_Block_Admin_Grid extends Mage_Adminhtml_Block_Widget_Gri
             'type' => 'float'
         ));
         
-        $this->addColumn('code', array(
-            'header' => $helper->__('Code'),
-            'index' => 'code',
-            'type' => 'varchar'
-        ));
         
         $this->addColumn('status', array(
             'header' => $helper->__('Status'),
