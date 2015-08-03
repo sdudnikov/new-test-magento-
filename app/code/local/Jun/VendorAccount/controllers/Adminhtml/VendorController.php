@@ -45,6 +45,8 @@ class Jun_VendorAccount_Adminhtml_VendorController extends Mage_Adminhtml_Contro
     public function saveAction()
     {
         $data = $this->getRequest()->getPost();
+        $data['code'] = strtolower($data['code']);
+
 
         try {
             $model = Mage::getModel('vendorm/vendor');
